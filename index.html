@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>My Task Manager</h1>
+
+<form id="taskForm">
+    <input type="text" id="taskInput" placeholder="Enter task" required>
+    <button type="submit">Add Task</button>
+</form>
+
+<button onclick="setFilter('all')">All</button>
+<button onclick="setFilter('active')">Active</button>
+<button onclick="setFilter('completed')">Completed</button>
+
+<ul id="taskList"></ul>
+
+<p>Total: <span id="totalTasks">0</span></p>
+<p>Completed: <span id="completedTasks">0</span></p>
+<p>Active: <span id="activeTasks">0</span></p>
+
+<script src="js/app.js"></script>
+</body>
+</html>
